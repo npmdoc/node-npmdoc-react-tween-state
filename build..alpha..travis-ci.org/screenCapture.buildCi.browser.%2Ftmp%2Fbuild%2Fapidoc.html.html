@@ -1,0 +1,2934 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/chenglou/react-tween-state">react-tween-state (v0.1.5)</a>
+</h1>
+<h4>React animation.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state">module react-tween-state</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.Mixin._rafCb">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>Mixin._rafCb
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.Mixin.componentWillUnmount">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>Mixin.componentWillUnmount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.Mixin.getInitialState">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>Mixin.getInitialState
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.Mixin.getTweeningValue">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>Mixin.getTweeningValue
+            <span class="apidocSignatureSpan">(e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.Mixin.tweenState">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>Mixin.tweenState
+            <span class="apidocSignatureSpan">(e, n)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInBack">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInBack
+            <span class="apidocSignatureSpan">(e, n, t, r, a)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInBounce">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInBounce
+            <span class="apidocSignatureSpan">(e, n, r, a)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInCirc">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInCirc
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInCubic">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInCubic
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInElastic">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInElastic
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInExpo">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInExpo
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutBack">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInOutBack
+            <span class="apidocSignatureSpan">(e, n, t, r, a)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutBounce">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInOutBounce
+            <span class="apidocSignatureSpan">(e, n, r, a)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutCirc">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInOutCirc
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutCubic">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInOutCubic
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutElastic">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInOutElastic
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutExpo">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInOutExpo
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutQuad">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInOutQuad
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutQuart">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInOutQuart
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutQuint">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInOutQuint
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutSine">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInOutSine
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInQuad">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInQuad
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInQuart">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInQuart
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInQuint">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInQuint
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInSine">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInSine
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutBack">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeOutBack
+            <span class="apidocSignatureSpan">(e, n, t, r, a)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutBounce">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeOutBounce
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutCirc">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeOutCirc
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutCubic">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeOutCubic
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutElastic">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeOutElastic
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutExpo">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeOutExpo
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutQuad">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeOutQuad
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutQuart">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeOutQuart
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutQuint">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeOutQuint
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutSine">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeOutSine
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.linear">
+            function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.linear
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-tween-state.</span>Mixin</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-tween-state.</span>stackBehavior</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.Mixin">module react-tween-state.Mixin</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.Mixin._rafCb">
+            function <span class="apidocSignatureSpan">react-tween-state.Mixin.</span>_rafCb
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.Mixin.componentWillUnmount">
+            function <span class="apidocSignatureSpan">react-tween-state.Mixin.</span>componentWillUnmount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.Mixin.getInitialState">
+            function <span class="apidocSignatureSpan">react-tween-state.Mixin.</span>getInitialState
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.Mixin.getTweeningValue">
+            function <span class="apidocSignatureSpan">react-tween-state.Mixin.</span>getTweeningValue
+            <span class="apidocSignatureSpan">(e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.Mixin.tweenState">
+            function <span class="apidocSignatureSpan">react-tween-state.Mixin.</span>tweenState
+            <span class="apidocSignatureSpan">(e, n)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-tween-state.Mixin.</span>_rafID</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.Mixin._rafCb">module react-tween-state.Mixin._rafCb</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.Mixin._rafCb._rafCb">
+            function <span class="apidocSignatureSpan">react-tween-state.Mixin.</span>_rafCb
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.Mixin.componentWillUnmount">module react-tween-state.Mixin.componentWillUnmount</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.Mixin.componentWillUnmount.componentWillUnmount">
+            function <span class="apidocSignatureSpan">react-tween-state.Mixin.</span>componentWillUnmount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.Mixin.getInitialState">module react-tween-state.Mixin.getInitialState</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.Mixin.getInitialState.getInitialState">
+            function <span class="apidocSignatureSpan">react-tween-state.Mixin.</span>getInitialState
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.Mixin.getTweeningValue">module react-tween-state.Mixin.getTweeningValue</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.Mixin.getTweeningValue.getTweeningValue">
+            function <span class="apidocSignatureSpan">react-tween-state.Mixin.</span>getTweeningValue
+            <span class="apidocSignatureSpan">(e)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.Mixin.tweenState">module react-tween-state.Mixin.tweenState</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.Mixin.tweenState.tweenState">
+            function <span class="apidocSignatureSpan">react-tween-state.Mixin.</span>tweenState
+            <span class="apidocSignatureSpan">(e, n)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes">module react-tween-state.easingTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInBack">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInBack
+            <span class="apidocSignatureSpan">(e, n, t, r, a)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInBounce">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInBounce
+            <span class="apidocSignatureSpan">(e, n, r, a)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInCirc">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInCirc
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInCubic">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInCubic
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInElastic">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInElastic
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInExpo">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInExpo
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutBack">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutBack
+            <span class="apidocSignatureSpan">(e, n, t, r, a)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutBounce">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutBounce
+            <span class="apidocSignatureSpan">(e, n, r, a)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutCirc">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutCirc
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutCubic">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutCubic
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutElastic">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutElastic
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutExpo">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutExpo
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutQuad">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutQuad
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutQuart">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutQuart
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutQuint">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutQuint
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutSine">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutSine
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInQuad">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInQuad
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInQuart">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInQuart
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInQuint">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInQuint
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInSine">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInSine
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutBack">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutBack
+            <span class="apidocSignatureSpan">(e, n, t, r, a)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutBounce">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutBounce
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutCirc">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutCirc
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutCubic">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutCubic
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutElastic">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutElastic
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutExpo">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutExpo
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutQuad">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutQuad
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutQuart">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutQuart
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutQuint">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutQuint
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutSine">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutSine
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.linear">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>linear
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeInBack">module react-tween-state.easingTypes.easeInBack</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInBack.easeInBack">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInBack
+            <span class="apidocSignatureSpan">(e, n, t, r, a)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeInBounce">module react-tween-state.easingTypes.easeInBounce</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInBounce.easeInBounce">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInBounce
+            <span class="apidocSignatureSpan">(e, n, r, a)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeInCirc">module react-tween-state.easingTypes.easeInCirc</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInCirc.easeInCirc">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInCirc
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeInCubic">module react-tween-state.easingTypes.easeInCubic</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInCubic.easeInCubic">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInCubic
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeInElastic">module react-tween-state.easingTypes.easeInElastic</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInElastic.easeInElastic">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInElastic
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeInExpo">module react-tween-state.easingTypes.easeInExpo</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInExpo.easeInExpo">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInExpo
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeInOutBack">module react-tween-state.easingTypes.easeInOutBack</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutBack.easeInOutBack">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutBack
+            <span class="apidocSignatureSpan">(e, n, t, r, a)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeInOutBounce">module react-tween-state.easingTypes.easeInOutBounce</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutBounce.easeInOutBounce">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutBounce
+            <span class="apidocSignatureSpan">(e, n, r, a)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeInOutCirc">module react-tween-state.easingTypes.easeInOutCirc</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutCirc.easeInOutCirc">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutCirc
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeInOutCubic">module react-tween-state.easingTypes.easeInOutCubic</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutCubic.easeInOutCubic">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutCubic
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeInOutElastic">module react-tween-state.easingTypes.easeInOutElastic</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutElastic.easeInOutElastic">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutElastic
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeInOutExpo">module react-tween-state.easingTypes.easeInOutExpo</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutExpo.easeInOutExpo">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutExpo
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeInOutQuad">module react-tween-state.easingTypes.easeInOutQuad</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutQuad.easeInOutQuad">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutQuad
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeInOutQuart">module react-tween-state.easingTypes.easeInOutQuart</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutQuart.easeInOutQuart">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutQuart
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeInOutQuint">module react-tween-state.easingTypes.easeInOutQuint</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutQuint.easeInOutQuint">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutQuint
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeInOutSine">module react-tween-state.easingTypes.easeInOutSine</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInOutSine.easeInOutSine">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutSine
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeInQuad">module react-tween-state.easingTypes.easeInQuad</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInQuad.easeInQuad">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInQuad
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeInQuart">module react-tween-state.easingTypes.easeInQuart</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInQuart.easeInQuart">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInQuart
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeInQuint">module react-tween-state.easingTypes.easeInQuint</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInQuint.easeInQuint">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInQuint
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeInSine">module react-tween-state.easingTypes.easeInSine</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeInSine.easeInSine">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInSine
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeOutBack">module react-tween-state.easingTypes.easeOutBack</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutBack.easeOutBack">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutBack
+            <span class="apidocSignatureSpan">(e, n, t, r, a)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeOutBounce">module react-tween-state.easingTypes.easeOutBounce</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutBounce.easeOutBounce">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutBounce
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeOutCirc">module react-tween-state.easingTypes.easeOutCirc</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutCirc.easeOutCirc">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutCirc
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeOutCubic">module react-tween-state.easingTypes.easeOutCubic</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutCubic.easeOutCubic">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutCubic
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeOutElastic">module react-tween-state.easingTypes.easeOutElastic</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutElastic.easeOutElastic">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutElastic
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeOutExpo">module react-tween-state.easingTypes.easeOutExpo</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutExpo.easeOutExpo">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutExpo
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeOutQuad">module react-tween-state.easingTypes.easeOutQuad</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutQuad.easeOutQuad">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutQuad
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeOutQuart">module react-tween-state.easingTypes.easeOutQuart</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutQuart.easeOutQuart">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutQuart
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeOutQuint">module react-tween-state.easingTypes.easeOutQuint</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutQuint.easeOutQuint">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutQuint
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.easeOutSine">module react-tween-state.easingTypes.easeOutSine</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.easeOutSine.easeOutSine">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutSine
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-tween-state.easingTypes.linear">module react-tween-state.easingTypes.linear</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-tween-state.easingTypes.linear.linear">
+            function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>linear
+            <span class="apidocSignatureSpan">(e, n, t, r)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state" id="apidoc.module.react-tween-state">module react-tween-state</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.Mixin._rafCb" id="apidoc.element.react-tween-state.Mixin._rafCb">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>Mixin._rafCb
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Mixin._rafCb = function (){var e=this.state;if(0!==e.tweenQueue.length){for(var n=Date.now(),t=[],r=0;r&lt;e.tweenQueue.length;r++){var a=e.tweenQueue
+[r],u=a.initTime,o=a.config;n-u&lt;o.duration?t.push(a):o.onEnd&amp;&amp;o.onEnd()}-1!==this._rafID&amp;&amp;(this.setState({tweenQueue:t}),this._rafID
+=(0,i["default"])(this._rafCb))}}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.Mixin.componentWillUnmount" id="apidoc.element.react-tween-state.Mixin.componentWillUnmount">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>Mixin.componentWillUnmount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Mixin.componentWillUnmount = function (){i["default"].cancel(this._rafID),this._rafID=-1}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.Mixin.getInitialState" id="apidoc.element.react-tween-state.Mixin.getInitialState">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>Mixin.getInitialState
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Mixin.getInitialState = function (){return{tweenQueue:[]}}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.Mixin.getTweeningValue" id="apidoc.element.react-tween-state.Mixin.getTweeningValue">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>Mixin.getTweeningValue
+        <span class="apidocSignatureSpan">(e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Mixin.getTweeningValue = function (e){var n=this.state,t=void 0,r=void 0;if("string"==typeof e)t=n[e],r=e;else{t=n;for(var a=0;a&lt;e.length;a++)t=t[e[a]];r
+=e.join("|")}for(var u=Date.now(),a=0;a&lt;n.tweenQueue.length;a++){var o=n.tweenQueue[a],i=o.pathHash,s=o.initTime,c=o.config;if(i
+===r){var f=u-s&gt;c.duration?c.duration:Math.max(0,u-s),l=0===c.duration?c.endValue:c.easing(f,c.beginValue,c.endValue,c.duration),
+h=l-c.endValue;t+=h}}return t}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.Mixin.tweenState" id="apidoc.element.react-tween-state.Mixin.tweenState">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>Mixin.tweenState
+        <span class="apidocSignatureSpan">(e, n)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Mixin.tweenState = function (e, n){var t=this,r=n.easing,a=n.duration,u=n.delay,o=n.beginValue,v=n.endValue,d=n.onEnd,p=n.stackBehavior;this.setState
+(function(n){var I=n,w=void 0,g=void 0;if("string"==typeof e)w=e,g=e;else{for(var M=0;M&lt;e.length-1;M++)I=I[e[M]];w=e[e.length-1],
+g=e.join("|")}var m={easing:r||c,duration:null==a?f:a,delay:null==u?l:u,beginValue:null==o?I[w]:o,endValue:v,onEnd:d,stackBehavior
+:p||s},x=n.tweenQueue;return m.stackBehavior===h.DESTRUCTIVE&amp;&amp;(x=n.tweenQueue.filter(function(e){return e.pathHash!==g})),x.push
+({pathHash:g,config:m,initTime:Date.now()+m.delay}),I[w]=m.endValue,1===x.length&amp;&amp;(t._rafID=(0,i["default"])(t._rafCb)),{tweenQueue
+:x}})}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInBack" id="apidoc.element.react-tween-state.easingTypes.easeInBack">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInBack
+        <span class="apidocSignatureSpan">(e, n, t, r, a)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeInBack = function (e, n, t, r, a){var u=t-n;return void 0===a&amp;&amp;(a=1.70158),u*(e/=r)*e*((a+1)*e-a)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInBounce" id="apidoc.element.react-tween-state.easingTypes.easeInBounce">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInBounce
+        <span class="apidocSignatureSpan">(e, n, r, a)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeInBounce = function (e, n, r, a){var u,o=r-n;return u=t.easeOutBounce(a-e,0,o,a),o-u+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInCirc" id="apidoc.element.react-tween-state.easingTypes.easeInCirc">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInCirc
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeInCirc = function (e, n, t, r){var a=t-n;return-a*(Math.sqrt(1-(e/=r)*e)-1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInCubic" id="apidoc.element.react-tween-state.easingTypes.easeInCubic">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInCubic
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeInCubic = function (e, n, t, r){var a=t-n;return a*(e/=r)*e*e+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInElastic" id="apidoc.element.react-tween-state.easingTypes.easeInElastic">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInElastic
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeInElastic = function (e, n, t, r){var a,u,o,i=t-n;return o=1.70158,u=0,a=i,0===e?n:1===(e/=r)?n+i:(u||(u=.3*r),a&lt;Math.abs(i)?(a=i,o=u/4):o=u/(2
+*Math.PI)*Math.asin(i/a),-(a*Math.pow(2,10*(e-=1))*Math.sin((e*r-o)*(2*Math.PI)/u))+n)}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInExpo" id="apidoc.element.react-tween-state.easingTypes.easeInExpo">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInExpo
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeInExpo = function (e, n, t, r){var a=t-n;return 0==e?n:a*Math.pow(2,10*(e/r-1))+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutBack" id="apidoc.element.react-tween-state.easingTypes.easeInOutBack">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInOutBack
+        <span class="apidocSignatureSpan">(e, n, t, r, a)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeInOutBack = function (e, n, t, r, a){var u=t-n;return void 0===a&amp;&amp;(a=1.70158),(e/=r/2)&lt;1?u/2*(e*e*(((a*=1.525)+1)*e-a))+n:u/2*((e-=2)*e*(((a*=1.
+525)+1)*e+a)+2)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutBounce" id="apidoc.element.react-tween-state.easingTypes.easeInOutBounce">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInOutBounce
+        <span class="apidocSignatureSpan">(e, n, r, a)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeInOutBounce = function (e, n, r, a){var u,o=r-n;return a/2&gt;e?(u=t.easeInBounce(2*e,0,o,a),.5*u+n):(u=t.easeOutBounce(2*e-a,0,o,a),.5*u+.5*o+n)}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutCirc" id="apidoc.element.react-tween-state.easingTypes.easeInOutCirc">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInOutCirc
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeInOutCirc = function (e, n, t, r){var a=t-n;return(e/=r/2)&lt;1?-a/2*(Math.sqrt(1-e*e)-1)+n:a/2*(Math.sqrt(1-(e-=2)*e)+1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutCubic" id="apidoc.element.react-tween-state.easingTypes.easeInOutCubic">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInOutCubic
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeInOutCubic = function (e, n, t, r){var a=t-n;return(e/=r/2)&lt;1?a/2*e*e*e+n:a/2*((e-=2)*e*e+2)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutElastic" id="apidoc.element.react-tween-state.easingTypes.easeInOutElastic">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInOutElastic
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeInOutElastic = function (e, n, t, r){var a,u,o,i=t-n;return o=1.70158,u=0,a=i,0===e?n:2===(e/=r/2)?n+i:(u||(u=r*(.3*1.5)),a&lt;Math.abs(i)?(a=i,o=u/4
+):o=u/(2*Math.PI)*Math.asin(i/a),1&gt;e?-.5*(a*Math.pow(2,10*(e-=1))*Math.sin((e*r-o)*(2*Math.PI)/u))+n:a*Math.pow(2,-10*(e-=1))*Math
+.sin((e*r-o)*(2*Math.PI)/u)*.5+i+n)}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutExpo" id="apidoc.element.react-tween-state.easingTypes.easeInOutExpo">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInOutExpo
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeInOutExpo = function (e, n, t, r){var a=t-n;return 0===e?n:e===r?n+a:(e/=r/2)&lt;1?a/2*Math.pow(2,10*(e-1))+n:a/2*(-Math.pow(2,-10*--e)+2)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutQuad" id="apidoc.element.react-tween-state.easingTypes.easeInOutQuad">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInOutQuad
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeInOutQuad = function (e, n, t, r){var a=t-n;return(e/=r/2)&lt;1?a/2*e*e+n:-a/2*(--e*(e-2)-1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutQuart" id="apidoc.element.react-tween-state.easingTypes.easeInOutQuart">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInOutQuart
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeInOutQuart = function (e, n, t, r){var a=t-n;return(e/=r/2)&lt;1?a/2*e*e*e*e+n:-a/2*((e-=2)*e*e*e-2)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutQuint" id="apidoc.element.react-tween-state.easingTypes.easeInOutQuint">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInOutQuint
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeInOutQuint = function (e, n, t, r){var a=t-n;return(e/=r/2)&lt;1?a/2*e*e*e*e*e+n:a/2*((e-=2)*e*e*e*e+2)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutSine" id="apidoc.element.react-tween-state.easingTypes.easeInOutSine">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInOutSine
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeInOutSine = function (e, n, t, r){var a=t-n;return-a/2*(Math.cos(Math.PI*e/r)-1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInQuad" id="apidoc.element.react-tween-state.easingTypes.easeInQuad">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInQuad
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeInQuad = function (e, n, t, r){var a=t-n;return a*(e/=r)*e+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInQuart" id="apidoc.element.react-tween-state.easingTypes.easeInQuart">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInQuart
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeInQuart = function (e, n, t, r){var a=t-n;return a*(e/=r)*e*e*e+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInQuint" id="apidoc.element.react-tween-state.easingTypes.easeInQuint">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInQuint
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeInQuint = function (e, n, t, r){var a=t-n;return a*(e/=r)*e*e*e*e+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInSine" id="apidoc.element.react-tween-state.easingTypes.easeInSine">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeInSine
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeInSine = function (e, n, t, r){var a=t-n;return-a*Math.cos(e/r*(Math.PI/2))+a+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutBack" id="apidoc.element.react-tween-state.easingTypes.easeOutBack">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeOutBack
+        <span class="apidocSignatureSpan">(e, n, t, r, a)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeOutBack = function (e, n, t, r, a){var u=t-n;return void 0===a&amp;&amp;(a=1.70158),u*((e=e/r-1)*e*((a+1)*e+a)+1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutBounce" id="apidoc.element.react-tween-state.easingTypes.easeOutBounce">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeOutBounce
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeOutBounce = function (e, n, t, r){var a=t-n;return(e/=r)&lt;1/2.75?a*(7.5625*e*e)+n:2/2.75&gt;e?a*(7.5625*(e-=1.5/2.75)*e+.75)+n:2.5/2.75&gt;e?a*(7.5625
+*(e-=2.25/2.75)*e+.9375)+n:a*(7.5625*(e-=2.625/2.75)*e+.984375)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutCirc" id="apidoc.element.react-tween-state.easingTypes.easeOutCirc">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeOutCirc
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeOutCirc = function (e, n, t, r){var a=t-n;return a*Math.sqrt(1-(e=e/r-1)*e)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutCubic" id="apidoc.element.react-tween-state.easingTypes.easeOutCubic">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeOutCubic
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeOutCubic = function (e, n, t, r){var a=t-n;return a*((e=e/r-1)*e*e+1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutElastic" id="apidoc.element.react-tween-state.easingTypes.easeOutElastic">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeOutElastic
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeOutElastic = function (e, n, t, r){var a,u,o,i=t-n;return o=1.70158,u=0,a=i,0===e?n:1===(e/=r)?n+i:(u||(u=.3*r),a&lt;Math.abs(i)?(a=i,o=u/4):o=u/(2
+*Math.PI)*Math.asin(i/a),a*Math.pow(2,-10*e)*Math.sin((e*r-o)*(2*Math.PI)/u)+i+n)}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutExpo" id="apidoc.element.react-tween-state.easingTypes.easeOutExpo">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeOutExpo
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeOutExpo = function (e, n, t, r){var a=t-n;return e==r?n+a:a*(-Math.pow(2,-10*e/r)+1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutQuad" id="apidoc.element.react-tween-state.easingTypes.easeOutQuad">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeOutQuad
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeOutQuad = function (e, n, t, r){var a=t-n;return-a*(e/=r)*(e-2)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutQuart" id="apidoc.element.react-tween-state.easingTypes.easeOutQuart">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeOutQuart
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeOutQuart = function (e, n, t, r){var a=t-n;return-a*((e=e/r-1)*e*e*e-1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutQuint" id="apidoc.element.react-tween-state.easingTypes.easeOutQuint">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeOutQuint
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeOutQuint = function (e, n, t, r){var a=t-n;return a*((e=e/r-1)*e*e*e*e+1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutSine" id="apidoc.element.react-tween-state.easingTypes.easeOutSine">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.easeOutSine
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.easeOutSine = function (e, n, t, r){var a=t-n;return a*Math.sin(e/r*(Math.PI/2))+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.linear" id="apidoc.element.react-tween-state.easingTypes.linear">
+        function <span class="apidocSignatureSpan">react-tween-state.</span>easingTypes.linear
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easingTypes.linear = function (e, n, t, r){var a=t-n;return a*e/r+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.Mixin" id="apidoc.module.react-tween-state.Mixin">module react-tween-state.Mixin</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.Mixin._rafCb" id="apidoc.element.react-tween-state.Mixin._rafCb">
+        function <span class="apidocSignatureSpan">react-tween-state.Mixin.</span>_rafCb
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_rafCb = function (){var e=this.state;if(0!==e.tweenQueue.length){for(var n=Date.now(),t=[],r=0;r&lt;e.tweenQueue.length;r++){var a=e.tweenQueue
+[r],u=a.initTime,o=a.config;n-u&lt;o.duration?t.push(a):o.onEnd&amp;&amp;o.onEnd()}-1!==this._rafID&amp;&amp;(this.setState({tweenQueue:t}),this._rafID
+=(0,i["default"])(this._rafCb))}}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.Mixin.componentWillUnmount" id="apidoc.element.react-tween-state.Mixin.componentWillUnmount">
+        function <span class="apidocSignatureSpan">react-tween-state.Mixin.</span>componentWillUnmount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">componentWillUnmount = function (){i["default"].cancel(this._rafID),this._rafID=-1}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.Mixin.getInitialState" id="apidoc.element.react-tween-state.Mixin.getInitialState">
+        function <span class="apidocSignatureSpan">react-tween-state.Mixin.</span>getInitialState
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getInitialState = function (){return{tweenQueue:[]}}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.Mixin.getTweeningValue" id="apidoc.element.react-tween-state.Mixin.getTweeningValue">
+        function <span class="apidocSignatureSpan">react-tween-state.Mixin.</span>getTweeningValue
+        <span class="apidocSignatureSpan">(e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getTweeningValue = function (e){var n=this.state,t=void 0,r=void 0;if("string"==typeof e)t=n[e],r=e;else{t=n;for(var a=0;a&lt;e.length;a++)t=t[e[a]];r
+=e.join("|")}for(var u=Date.now(),a=0;a&lt;n.tweenQueue.length;a++){var o=n.tweenQueue[a],i=o.pathHash,s=o.initTime,c=o.config;if(i
+===r){var f=u-s&gt;c.duration?c.duration:Math.max(0,u-s),l=0===c.duration?c.endValue:c.easing(f,c.beginValue,c.endValue,c.duration),
+h=l-c.endValue;t+=h}}return t}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  },
+  render: function() {
+    var style = {
+      position: 'absolute',
+      width: 50,
+      height: 50,
+      backgroundColor: 'lightblue',
+      left: this.<span class="apidocCodeKeywordSpan">getTweeningValue</span>('left')
+    };
+    return &lt;div style={style} onClick={this.handleClick} /&gt;;
+  }
+});
+```
+
+The library exports `Mixin`, `easingTypes` and `stackBehavior`.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.Mixin.tweenState" id="apidoc.element.react-tween-state.Mixin.tweenState">
+        function <span class="apidocSignatureSpan">react-tween-state.Mixin.</span>tweenState
+        <span class="apidocSignatureSpan">(e, n)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tweenState = function (e, n){var t=this,r=n.easing,a=n.duration,u=n.delay,o=n.beginValue,v=n.endValue,d=n.onEnd,p=n.stackBehavior;this.setState
+(function(n){var I=n,w=void 0,g=void 0;if("string"==typeof e)w=e,g=e;else{for(var M=0;M&lt;e.length-1;M++)I=I[e[M]];w=e[e.length-1],
+g=e.join("|")}var m={easing:r||c,duration:null==a?f:a,delay:null==u?l:u,beginValue:null==o?I[w]:o,endValue:v,onEnd:d,stackBehavior
+:p||s},x=n.tweenQueue;return m.stackBehavior===h.DESTRUCTIVE&amp;&amp;(x=n.tweenQueue.filter(function(e){return e.pathHash!==g})),x.push
+({pathHash:g,config:m,initTime:Date.now()+m.delay}),I[w]=m.endValue,1===x.length&amp;&amp;(t._rafID=(0,i["default"])(t._rafCb)),{tweenQueue
+:x}})}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var App = React.createClass({
+mixins: [tweenState.Mixin],
+getInitialState: function() {
+  return {left: 0};
+},
+handleClick: function() {
+  this.<span class="apidocCodeKeywordSpan">tweenState</span>('left', {
+    easing: tweenState.easingTypes.easeInOutQuad,
+    duration: 500,
+    endValue: this.state.left === 0 ? 400 : 0
+  });
+},
+render: function() {
+  var style = {
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.Mixin._rafCb" id="apidoc.module.react-tween-state.Mixin._rafCb">module react-tween-state.Mixin._rafCb</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.Mixin._rafCb._rafCb" id="apidoc.element.react-tween-state.Mixin._rafCb._rafCb">
+        function <span class="apidocSignatureSpan">react-tween-state.Mixin.</span>_rafCb
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_rafCb = function (){var e=this.state;if(0!==e.tweenQueue.length){for(var n=Date.now(),t=[],r=0;r&lt;e.tweenQueue.length;r++){var a=e.tweenQueue
+[r],u=a.initTime,o=a.config;n-u&lt;o.duration?t.push(a):o.onEnd&amp;&amp;o.onEnd()}-1!==this._rafID&amp;&amp;(this.setState({tweenQueue:t}),this._rafID
+=(0,i["default"])(this._rafCb))}}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.Mixin.componentWillUnmount" id="apidoc.module.react-tween-state.Mixin.componentWillUnmount">module react-tween-state.Mixin.componentWillUnmount</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.Mixin.componentWillUnmount.componentWillUnmount" id="apidoc.element.react-tween-state.Mixin.componentWillUnmount.componentWillUnmount">
+        function <span class="apidocSignatureSpan">react-tween-state.Mixin.</span>componentWillUnmount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">componentWillUnmount = function (){i["default"].cancel(this._rafID),this._rafID=-1}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.Mixin.getInitialState" id="apidoc.module.react-tween-state.Mixin.getInitialState">module react-tween-state.Mixin.getInitialState</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.Mixin.getInitialState.getInitialState" id="apidoc.element.react-tween-state.Mixin.getInitialState.getInitialState">
+        function <span class="apidocSignatureSpan">react-tween-state.Mixin.</span>getInitialState
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getInitialState = function (){return{tweenQueue:[]}}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.Mixin.getTweeningValue" id="apidoc.module.react-tween-state.Mixin.getTweeningValue">module react-tween-state.Mixin.getTweeningValue</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.Mixin.getTweeningValue.getTweeningValue" id="apidoc.element.react-tween-state.Mixin.getTweeningValue.getTweeningValue">
+        function <span class="apidocSignatureSpan">react-tween-state.Mixin.</span>getTweeningValue
+        <span class="apidocSignatureSpan">(e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getTweeningValue = function (e){var n=this.state,t=void 0,r=void 0;if("string"==typeof e)t=n[e],r=e;else{t=n;for(var a=0;a&lt;e.length;a++)t=t[e[a]];r
+=e.join("|")}for(var u=Date.now(),a=0;a&lt;n.tweenQueue.length;a++){var o=n.tweenQueue[a],i=o.pathHash,s=o.initTime,c=o.config;if(i
+===r){var f=u-s&gt;c.duration?c.duration:Math.max(0,u-s),l=0===c.duration?c.endValue:c.easing(f,c.beginValue,c.endValue,c.duration),
+h=l-c.endValue;t+=h}}return t}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  },
+  render: function() {
+    var style = {
+      position: 'absolute',
+      width: 50,
+      height: 50,
+      backgroundColor: 'lightblue',
+      left: this.<span class="apidocCodeKeywordSpan">getTweeningValue</span>('left')
+    };
+    return &lt;div style={style} onClick={this.handleClick} /&gt;;
+  }
+});
+```
+
+The library exports `Mixin`, `easingTypes` and `stackBehavior`.
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.Mixin.tweenState" id="apidoc.module.react-tween-state.Mixin.tweenState">module react-tween-state.Mixin.tweenState</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.Mixin.tweenState.tweenState" id="apidoc.element.react-tween-state.Mixin.tweenState.tweenState">
+        function <span class="apidocSignatureSpan">react-tween-state.Mixin.</span>tweenState
+        <span class="apidocSignatureSpan">(e, n)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tweenState = function (e, n){var t=this,r=n.easing,a=n.duration,u=n.delay,o=n.beginValue,v=n.endValue,d=n.onEnd,p=n.stackBehavior;this.setState
+(function(n){var I=n,w=void 0,g=void 0;if("string"==typeof e)w=e,g=e;else{for(var M=0;M&lt;e.length-1;M++)I=I[e[M]];w=e[e.length-1],
+g=e.join("|")}var m={easing:r||c,duration:null==a?f:a,delay:null==u?l:u,beginValue:null==o?I[w]:o,endValue:v,onEnd:d,stackBehavior
+:p||s},x=n.tweenQueue;return m.stackBehavior===h.DESTRUCTIVE&amp;&amp;(x=n.tweenQueue.filter(function(e){return e.pathHash!==g})),x.push
+({pathHash:g,config:m,initTime:Date.now()+m.delay}),I[w]=m.endValue,1===x.length&amp;&amp;(t._rafID=(0,i["default"])(t._rafCb)),{tweenQueue
+:x}})}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var App = React.createClass({
+mixins: [tweenState.Mixin],
+getInitialState: function() {
+  return {left: 0};
+},
+handleClick: function() {
+  this.<span class="apidocCodeKeywordSpan">tweenState</span>('left', {
+    easing: tweenState.easingTypes.easeInOutQuad,
+    duration: 500,
+    endValue: this.state.left === 0 ? 400 : 0
+  });
+},
+render: function() {
+  var style = {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes" id="apidoc.module.react-tween-state.easingTypes">module react-tween-state.easingTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInBack" id="apidoc.element.react-tween-state.easingTypes.easeInBack">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInBack
+        <span class="apidocSignatureSpan">(e, n, t, r, a)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInBack = function (e, n, t, r, a){var u=t-n;return void 0===a&amp;&amp;(a=1.70158),u*(e/=r)*e*((a+1)*e-a)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInBounce" id="apidoc.element.react-tween-state.easingTypes.easeInBounce">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInBounce
+        <span class="apidocSignatureSpan">(e, n, r, a)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInBounce = function (e, n, r, a){var u,o=r-n;return u=t.easeOutBounce(a-e,0,o,a),o-u+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInCirc" id="apidoc.element.react-tween-state.easingTypes.easeInCirc">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInCirc
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInCirc = function (e, n, t, r){var a=t-n;return-a*(Math.sqrt(1-(e/=r)*e)-1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInCubic" id="apidoc.element.react-tween-state.easingTypes.easeInCubic">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInCubic
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInCubic = function (e, n, t, r){var a=t-n;return a*(e/=r)*e*e+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInElastic" id="apidoc.element.react-tween-state.easingTypes.easeInElastic">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInElastic
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInElastic = function (e, n, t, r){var a,u,o,i=t-n;return o=1.70158,u=0,a=i,0===e?n:1===(e/=r)?n+i:(u||(u=.3*r),a&lt;Math.abs(i)?(a=i,o=u/4):o=u/(2
+*Math.PI)*Math.asin(i/a),-(a*Math.pow(2,10*(e-=1))*Math.sin((e*r-o)*(2*Math.PI)/u))+n)}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInExpo" id="apidoc.element.react-tween-state.easingTypes.easeInExpo">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInExpo
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInExpo = function (e, n, t, r){var a=t-n;return 0==e?n:a*Math.pow(2,10*(e/r-1))+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutBack" id="apidoc.element.react-tween-state.easingTypes.easeInOutBack">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutBack
+        <span class="apidocSignatureSpan">(e, n, t, r, a)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInOutBack = function (e, n, t, r, a){var u=t-n;return void 0===a&amp;&amp;(a=1.70158),(e/=r/2)&lt;1?u/2*(e*e*(((a*=1.525)+1)*e-a))+n:u/2*((e-=2)*e*(((a*=1.
+525)+1)*e+a)+2)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutBounce" id="apidoc.element.react-tween-state.easingTypes.easeInOutBounce">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutBounce
+        <span class="apidocSignatureSpan">(e, n, r, a)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInOutBounce = function (e, n, r, a){var u,o=r-n;return a/2&gt;e?(u=t.easeInBounce(2*e,0,o,a),.5*u+n):(u=t.easeOutBounce(2*e-a,0,o,a),.5*u+.5*o+n)}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutCirc" id="apidoc.element.react-tween-state.easingTypes.easeInOutCirc">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutCirc
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInOutCirc = function (e, n, t, r){var a=t-n;return(e/=r/2)&lt;1?-a/2*(Math.sqrt(1-e*e)-1)+n:a/2*(Math.sqrt(1-(e-=2)*e)+1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutCubic" id="apidoc.element.react-tween-state.easingTypes.easeInOutCubic">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutCubic
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInOutCubic = function (e, n, t, r){var a=t-n;return(e/=r/2)&lt;1?a/2*e*e*e+n:a/2*((e-=2)*e*e+2)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutElastic" id="apidoc.element.react-tween-state.easingTypes.easeInOutElastic">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutElastic
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInOutElastic = function (e, n, t, r){var a,u,o,i=t-n;return o=1.70158,u=0,a=i,0===e?n:2===(e/=r/2)?n+i:(u||(u=r*(.3*1.5)),a&lt;Math.abs(i)?(a=i,o=u/4
+):o=u/(2*Math.PI)*Math.asin(i/a),1&gt;e?-.5*(a*Math.pow(2,10*(e-=1))*Math.sin((e*r-o)*(2*Math.PI)/u))+n:a*Math.pow(2,-10*(e-=1))*Math
+.sin((e*r-o)*(2*Math.PI)/u)*.5+i+n)}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutExpo" id="apidoc.element.react-tween-state.easingTypes.easeInOutExpo">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutExpo
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInOutExpo = function (e, n, t, r){var a=t-n;return 0===e?n:e===r?n+a:(e/=r/2)&lt;1?a/2*Math.pow(2,10*(e-1))+n:a/2*(-Math.pow(2,-10*--e)+2)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutQuad" id="apidoc.element.react-tween-state.easingTypes.easeInOutQuad">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutQuad
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInOutQuad = function (e, n, t, r){var a=t-n;return(e/=r/2)&lt;1?a/2*e*e+n:-a/2*(--e*(e-2)-1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutQuart" id="apidoc.element.react-tween-state.easingTypes.easeInOutQuart">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutQuart
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInOutQuart = function (e, n, t, r){var a=t-n;return(e/=r/2)&lt;1?a/2*e*e*e*e+n:-a/2*((e-=2)*e*e*e-2)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutQuint" id="apidoc.element.react-tween-state.easingTypes.easeInOutQuint">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutQuint
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInOutQuint = function (e, n, t, r){var a=t-n;return(e/=r/2)&lt;1?a/2*e*e*e*e*e+n:a/2*((e-=2)*e*e*e*e+2)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutSine" id="apidoc.element.react-tween-state.easingTypes.easeInOutSine">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutSine
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInOutSine = function (e, n, t, r){var a=t-n;return-a/2*(Math.cos(Math.PI*e/r)-1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInQuad" id="apidoc.element.react-tween-state.easingTypes.easeInQuad">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInQuad
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInQuad = function (e, n, t, r){var a=t-n;return a*(e/=r)*e+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInQuart" id="apidoc.element.react-tween-state.easingTypes.easeInQuart">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInQuart
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInQuart = function (e, n, t, r){var a=t-n;return a*(e/=r)*e*e*e+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInQuint" id="apidoc.element.react-tween-state.easingTypes.easeInQuint">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInQuint
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInQuint = function (e, n, t, r){var a=t-n;return a*(e/=r)*e*e*e*e+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInSine" id="apidoc.element.react-tween-state.easingTypes.easeInSine">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInSine
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInSine = function (e, n, t, r){var a=t-n;return-a*Math.cos(e/r*(Math.PI/2))+a+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutBack" id="apidoc.element.react-tween-state.easingTypes.easeOutBack">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutBack
+        <span class="apidocSignatureSpan">(e, n, t, r, a)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeOutBack = function (e, n, t, r, a){var u=t-n;return void 0===a&amp;&amp;(a=1.70158),u*((e=e/r-1)*e*((a+1)*e+a)+1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutBounce" id="apidoc.element.react-tween-state.easingTypes.easeOutBounce">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutBounce
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeOutBounce = function (e, n, t, r){var a=t-n;return(e/=r)&lt;1/2.75?a*(7.5625*e*e)+n:2/2.75&gt;e?a*(7.5625*(e-=1.5/2.75)*e+.75)+n:2.5/2.75&gt;e?a*(7.5625
+*(e-=2.25/2.75)*e+.9375)+n:a*(7.5625*(e-=2.625/2.75)*e+.984375)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutCirc" id="apidoc.element.react-tween-state.easingTypes.easeOutCirc">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutCirc
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeOutCirc = function (e, n, t, r){var a=t-n;return a*Math.sqrt(1-(e=e/r-1)*e)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutCubic" id="apidoc.element.react-tween-state.easingTypes.easeOutCubic">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutCubic
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeOutCubic = function (e, n, t, r){var a=t-n;return a*((e=e/r-1)*e*e+1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutElastic" id="apidoc.element.react-tween-state.easingTypes.easeOutElastic">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutElastic
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeOutElastic = function (e, n, t, r){var a,u,o,i=t-n;return o=1.70158,u=0,a=i,0===e?n:1===(e/=r)?n+i:(u||(u=.3*r),a&lt;Math.abs(i)?(a=i,o=u/4):o=u/(2
+*Math.PI)*Math.asin(i/a),a*Math.pow(2,-10*e)*Math.sin((e*r-o)*(2*Math.PI)/u)+i+n)}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutExpo" id="apidoc.element.react-tween-state.easingTypes.easeOutExpo">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutExpo
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeOutExpo = function (e, n, t, r){var a=t-n;return e==r?n+a:a*(-Math.pow(2,-10*e/r)+1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutQuad" id="apidoc.element.react-tween-state.easingTypes.easeOutQuad">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutQuad
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeOutQuad = function (e, n, t, r){var a=t-n;return-a*(e/=r)*(e-2)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutQuart" id="apidoc.element.react-tween-state.easingTypes.easeOutQuart">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutQuart
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeOutQuart = function (e, n, t, r){var a=t-n;return-a*((e=e/r-1)*e*e*e-1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutQuint" id="apidoc.element.react-tween-state.easingTypes.easeOutQuint">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutQuint
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeOutQuint = function (e, n, t, r){var a=t-n;return a*((e=e/r-1)*e*e*e*e+1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutSine" id="apidoc.element.react-tween-state.easingTypes.easeOutSine">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutSine
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeOutSine = function (e, n, t, r){var a=t-n;return a*Math.sin(e/r*(Math.PI/2))+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.linear" id="apidoc.element.react-tween-state.easingTypes.linear">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>linear
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">linear = function (e, n, t, r){var a=t-n;return a*e/r+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeInBack" id="apidoc.module.react-tween-state.easingTypes.easeInBack">module react-tween-state.easingTypes.easeInBack</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInBack.easeInBack" id="apidoc.element.react-tween-state.easingTypes.easeInBack.easeInBack">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInBack
+        <span class="apidocSignatureSpan">(e, n, t, r, a)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInBack = function (e, n, t, r, a){var u=t-n;return void 0===a&amp;&amp;(a=1.70158),u*(e/=r)*e*((a+1)*e-a)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeInBounce" id="apidoc.module.react-tween-state.easingTypes.easeInBounce">module react-tween-state.easingTypes.easeInBounce</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInBounce.easeInBounce" id="apidoc.element.react-tween-state.easingTypes.easeInBounce.easeInBounce">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInBounce
+        <span class="apidocSignatureSpan">(e, n, r, a)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInBounce = function (e, n, r, a){var u,o=r-n;return u=t.easeOutBounce(a-e,0,o,a),o-u+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeInCirc" id="apidoc.module.react-tween-state.easingTypes.easeInCirc">module react-tween-state.easingTypes.easeInCirc</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInCirc.easeInCirc" id="apidoc.element.react-tween-state.easingTypes.easeInCirc.easeInCirc">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInCirc
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInCirc = function (e, n, t, r){var a=t-n;return-a*(Math.sqrt(1-(e/=r)*e)-1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeInCubic" id="apidoc.module.react-tween-state.easingTypes.easeInCubic">module react-tween-state.easingTypes.easeInCubic</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInCubic.easeInCubic" id="apidoc.element.react-tween-state.easingTypes.easeInCubic.easeInCubic">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInCubic
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInCubic = function (e, n, t, r){var a=t-n;return a*(e/=r)*e*e+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeInElastic" id="apidoc.module.react-tween-state.easingTypes.easeInElastic">module react-tween-state.easingTypes.easeInElastic</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInElastic.easeInElastic" id="apidoc.element.react-tween-state.easingTypes.easeInElastic.easeInElastic">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInElastic
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInElastic = function (e, n, t, r){var a,u,o,i=t-n;return o=1.70158,u=0,a=i,0===e?n:1===(e/=r)?n+i:(u||(u=.3*r),a&lt;Math.abs(i)?(a=i,o=u/4):o=u/(2
+*Math.PI)*Math.asin(i/a),-(a*Math.pow(2,10*(e-=1))*Math.sin((e*r-o)*(2*Math.PI)/u))+n)}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeInExpo" id="apidoc.module.react-tween-state.easingTypes.easeInExpo">module react-tween-state.easingTypes.easeInExpo</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInExpo.easeInExpo" id="apidoc.element.react-tween-state.easingTypes.easeInExpo.easeInExpo">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInExpo
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInExpo = function (e, n, t, r){var a=t-n;return 0==e?n:a*Math.pow(2,10*(e/r-1))+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeInOutBack" id="apidoc.module.react-tween-state.easingTypes.easeInOutBack">module react-tween-state.easingTypes.easeInOutBack</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutBack.easeInOutBack" id="apidoc.element.react-tween-state.easingTypes.easeInOutBack.easeInOutBack">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutBack
+        <span class="apidocSignatureSpan">(e, n, t, r, a)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInOutBack = function (e, n, t, r, a){var u=t-n;return void 0===a&amp;&amp;(a=1.70158),(e/=r/2)&lt;1?u/2*(e*e*(((a*=1.525)+1)*e-a))+n:u/2*((e-=2)*e*(((a*=1.
+525)+1)*e+a)+2)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeInOutBounce" id="apidoc.module.react-tween-state.easingTypes.easeInOutBounce">module react-tween-state.easingTypes.easeInOutBounce</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutBounce.easeInOutBounce" id="apidoc.element.react-tween-state.easingTypes.easeInOutBounce.easeInOutBounce">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutBounce
+        <span class="apidocSignatureSpan">(e, n, r, a)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInOutBounce = function (e, n, r, a){var u,o=r-n;return a/2&gt;e?(u=t.easeInBounce(2*e,0,o,a),.5*u+n):(u=t.easeOutBounce(2*e-a,0,o,a),.5*u+.5*o+n)}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeInOutCirc" id="apidoc.module.react-tween-state.easingTypes.easeInOutCirc">module react-tween-state.easingTypes.easeInOutCirc</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutCirc.easeInOutCirc" id="apidoc.element.react-tween-state.easingTypes.easeInOutCirc.easeInOutCirc">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutCirc
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInOutCirc = function (e, n, t, r){var a=t-n;return(e/=r/2)&lt;1?-a/2*(Math.sqrt(1-e*e)-1)+n:a/2*(Math.sqrt(1-(e-=2)*e)+1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeInOutCubic" id="apidoc.module.react-tween-state.easingTypes.easeInOutCubic">module react-tween-state.easingTypes.easeInOutCubic</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutCubic.easeInOutCubic" id="apidoc.element.react-tween-state.easingTypes.easeInOutCubic.easeInOutCubic">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutCubic
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInOutCubic = function (e, n, t, r){var a=t-n;return(e/=r/2)&lt;1?a/2*e*e*e+n:a/2*((e-=2)*e*e+2)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeInOutElastic" id="apidoc.module.react-tween-state.easingTypes.easeInOutElastic">module react-tween-state.easingTypes.easeInOutElastic</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutElastic.easeInOutElastic" id="apidoc.element.react-tween-state.easingTypes.easeInOutElastic.easeInOutElastic">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutElastic
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInOutElastic = function (e, n, t, r){var a,u,o,i=t-n;return o=1.70158,u=0,a=i,0===e?n:2===(e/=r/2)?n+i:(u||(u=r*(.3*1.5)),a&lt;Math.abs(i)?(a=i,o=u/4
+):o=u/(2*Math.PI)*Math.asin(i/a),1&gt;e?-.5*(a*Math.pow(2,10*(e-=1))*Math.sin((e*r-o)*(2*Math.PI)/u))+n:a*Math.pow(2,-10*(e-=1))*Math
+.sin((e*r-o)*(2*Math.PI)/u)*.5+i+n)}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeInOutExpo" id="apidoc.module.react-tween-state.easingTypes.easeInOutExpo">module react-tween-state.easingTypes.easeInOutExpo</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutExpo.easeInOutExpo" id="apidoc.element.react-tween-state.easingTypes.easeInOutExpo.easeInOutExpo">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutExpo
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInOutExpo = function (e, n, t, r){var a=t-n;return 0===e?n:e===r?n+a:(e/=r/2)&lt;1?a/2*Math.pow(2,10*(e-1))+n:a/2*(-Math.pow(2,-10*--e)+2)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeInOutQuad" id="apidoc.module.react-tween-state.easingTypes.easeInOutQuad">module react-tween-state.easingTypes.easeInOutQuad</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutQuad.easeInOutQuad" id="apidoc.element.react-tween-state.easingTypes.easeInOutQuad.easeInOutQuad">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutQuad
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInOutQuad = function (e, n, t, r){var a=t-n;return(e/=r/2)&lt;1?a/2*e*e+n:-a/2*(--e*(e-2)-1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeInOutQuart" id="apidoc.module.react-tween-state.easingTypes.easeInOutQuart">module react-tween-state.easingTypes.easeInOutQuart</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutQuart.easeInOutQuart" id="apidoc.element.react-tween-state.easingTypes.easeInOutQuart.easeInOutQuart">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutQuart
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInOutQuart = function (e, n, t, r){var a=t-n;return(e/=r/2)&lt;1?a/2*e*e*e*e+n:-a/2*((e-=2)*e*e*e-2)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeInOutQuint" id="apidoc.module.react-tween-state.easingTypes.easeInOutQuint">module react-tween-state.easingTypes.easeInOutQuint</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutQuint.easeInOutQuint" id="apidoc.element.react-tween-state.easingTypes.easeInOutQuint.easeInOutQuint">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutQuint
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInOutQuint = function (e, n, t, r){var a=t-n;return(e/=r/2)&lt;1?a/2*e*e*e*e*e+n:a/2*((e-=2)*e*e*e*e+2)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeInOutSine" id="apidoc.module.react-tween-state.easingTypes.easeInOutSine">module react-tween-state.easingTypes.easeInOutSine</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInOutSine.easeInOutSine" id="apidoc.element.react-tween-state.easingTypes.easeInOutSine.easeInOutSine">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInOutSine
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInOutSine = function (e, n, t, r){var a=t-n;return-a/2*(Math.cos(Math.PI*e/r)-1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeInQuad" id="apidoc.module.react-tween-state.easingTypes.easeInQuad">module react-tween-state.easingTypes.easeInQuad</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInQuad.easeInQuad" id="apidoc.element.react-tween-state.easingTypes.easeInQuad.easeInQuad">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInQuad
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInQuad = function (e, n, t, r){var a=t-n;return a*(e/=r)*e+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeInQuart" id="apidoc.module.react-tween-state.easingTypes.easeInQuart">module react-tween-state.easingTypes.easeInQuart</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInQuart.easeInQuart" id="apidoc.element.react-tween-state.easingTypes.easeInQuart.easeInQuart">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInQuart
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInQuart = function (e, n, t, r){var a=t-n;return a*(e/=r)*e*e*e+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeInQuint" id="apidoc.module.react-tween-state.easingTypes.easeInQuint">module react-tween-state.easingTypes.easeInQuint</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInQuint.easeInQuint" id="apidoc.element.react-tween-state.easingTypes.easeInQuint.easeInQuint">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInQuint
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInQuint = function (e, n, t, r){var a=t-n;return a*(e/=r)*e*e*e*e+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeInSine" id="apidoc.module.react-tween-state.easingTypes.easeInSine">module react-tween-state.easingTypes.easeInSine</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeInSine.easeInSine" id="apidoc.element.react-tween-state.easingTypes.easeInSine.easeInSine">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeInSine
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeInSine = function (e, n, t, r){var a=t-n;return-a*Math.cos(e/r*(Math.PI/2))+a+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeOutBack" id="apidoc.module.react-tween-state.easingTypes.easeOutBack">module react-tween-state.easingTypes.easeOutBack</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutBack.easeOutBack" id="apidoc.element.react-tween-state.easingTypes.easeOutBack.easeOutBack">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutBack
+        <span class="apidocSignatureSpan">(e, n, t, r, a)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeOutBack = function (e, n, t, r, a){var u=t-n;return void 0===a&amp;&amp;(a=1.70158),u*((e=e/r-1)*e*((a+1)*e+a)+1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeOutBounce" id="apidoc.module.react-tween-state.easingTypes.easeOutBounce">module react-tween-state.easingTypes.easeOutBounce</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutBounce.easeOutBounce" id="apidoc.element.react-tween-state.easingTypes.easeOutBounce.easeOutBounce">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutBounce
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeOutBounce = function (e, n, t, r){var a=t-n;return(e/=r)&lt;1/2.75?a*(7.5625*e*e)+n:2/2.75&gt;e?a*(7.5625*(e-=1.5/2.75)*e+.75)+n:2.5/2.75&gt;e?a*(7.5625
+*(e-=2.25/2.75)*e+.9375)+n:a*(7.5625*(e-=2.625/2.75)*e+.984375)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeOutCirc" id="apidoc.module.react-tween-state.easingTypes.easeOutCirc">module react-tween-state.easingTypes.easeOutCirc</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutCirc.easeOutCirc" id="apidoc.element.react-tween-state.easingTypes.easeOutCirc.easeOutCirc">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutCirc
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeOutCirc = function (e, n, t, r){var a=t-n;return a*Math.sqrt(1-(e=e/r-1)*e)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeOutCubic" id="apidoc.module.react-tween-state.easingTypes.easeOutCubic">module react-tween-state.easingTypes.easeOutCubic</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutCubic.easeOutCubic" id="apidoc.element.react-tween-state.easingTypes.easeOutCubic.easeOutCubic">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutCubic
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeOutCubic = function (e, n, t, r){var a=t-n;return a*((e=e/r-1)*e*e+1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeOutElastic" id="apidoc.module.react-tween-state.easingTypes.easeOutElastic">module react-tween-state.easingTypes.easeOutElastic</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutElastic.easeOutElastic" id="apidoc.element.react-tween-state.easingTypes.easeOutElastic.easeOutElastic">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutElastic
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeOutElastic = function (e, n, t, r){var a,u,o,i=t-n;return o=1.70158,u=0,a=i,0===e?n:1===(e/=r)?n+i:(u||(u=.3*r),a&lt;Math.abs(i)?(a=i,o=u/4):o=u/(2
+*Math.PI)*Math.asin(i/a),a*Math.pow(2,-10*e)*Math.sin((e*r-o)*(2*Math.PI)/u)+i+n)}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeOutExpo" id="apidoc.module.react-tween-state.easingTypes.easeOutExpo">module react-tween-state.easingTypes.easeOutExpo</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutExpo.easeOutExpo" id="apidoc.element.react-tween-state.easingTypes.easeOutExpo.easeOutExpo">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutExpo
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeOutExpo = function (e, n, t, r){var a=t-n;return e==r?n+a:a*(-Math.pow(2,-10*e/r)+1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeOutQuad" id="apidoc.module.react-tween-state.easingTypes.easeOutQuad">module react-tween-state.easingTypes.easeOutQuad</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutQuad.easeOutQuad" id="apidoc.element.react-tween-state.easingTypes.easeOutQuad.easeOutQuad">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutQuad
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeOutQuad = function (e, n, t, r){var a=t-n;return-a*(e/=r)*(e-2)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeOutQuart" id="apidoc.module.react-tween-state.easingTypes.easeOutQuart">module react-tween-state.easingTypes.easeOutQuart</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutQuart.easeOutQuart" id="apidoc.element.react-tween-state.easingTypes.easeOutQuart.easeOutQuart">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutQuart
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeOutQuart = function (e, n, t, r){var a=t-n;return-a*((e=e/r-1)*e*e*e-1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeOutQuint" id="apidoc.module.react-tween-state.easingTypes.easeOutQuint">module react-tween-state.easingTypes.easeOutQuint</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutQuint.easeOutQuint" id="apidoc.element.react-tween-state.easingTypes.easeOutQuint.easeOutQuint">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutQuint
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeOutQuint = function (e, n, t, r){var a=t-n;return a*((e=e/r-1)*e*e*e*e+1)+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.easeOutSine" id="apidoc.module.react-tween-state.easingTypes.easeOutSine">module react-tween-state.easingTypes.easeOutSine</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.easeOutSine.easeOutSine" id="apidoc.element.react-tween-state.easingTypes.easeOutSine.easeOutSine">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>easeOutSine
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">easeOutSine = function (e, n, t, r){var a=t-n;return a*Math.sin(e/r*(Math.PI/2))+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-tween-state.easingTypes.linear" id="apidoc.module.react-tween-state.easingTypes.linear">module react-tween-state.easingTypes.linear</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-tween-state.easingTypes.linear.linear" id="apidoc.element.react-tween-state.easingTypes.linear.linear">
+        function <span class="apidocSignatureSpan">react-tween-state.easingTypes.</span>linear
+        <span class="apidocSignatureSpan">(e, n, t, r)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">linear = function (e, n, t, r){var a=t-n;return a*e/r+n}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
