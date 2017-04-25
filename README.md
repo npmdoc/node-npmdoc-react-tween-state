@@ -1,4 +1,7 @@
-# api documentation for  [react-tween-state (v0.1.5)](https://github.com/chenglou/react-tween-state)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-tween-state.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-tween-state) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-tween-state.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-tween-state)
+# npmdoc-react-tween-state
+
+#### basic api documentation for  [react-tween-state (v0.1.5)](https://github.com/chenglou/react-tween-state)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-tween-state.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-tween-state) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-tween-state.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-tween-state)
+
 #### React animation.
 
 [![NPM](https://nodei.co/npm/react-tween-state.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/react-tween-state)
@@ -74,7 +77,8 @@
         "start": "webpack -w -d",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "version": "0.1.5"
+    "version": "0.1.5",
+    "bin": {}
 }
 ```
 
